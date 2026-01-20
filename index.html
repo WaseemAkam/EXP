@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="form-container">
+        <h2>Student Registration</h2>
+
+        <form>
+            <!-- Name -->
+            <label for="name">Full Name</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name"
+                placeholder="Enter your name"
+                required
+                pattern="^[A-Za-z ]{3,}$"
+            >
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                placeholder="example@mail.com"
+                required
+            >
+
+            <!-- Age -->
+            <label for="age">Age</label>
+            <input 
+                type="number" 
+                id="age" 
+                name="age"
+                min="18"
+                max="60"
+                required
+            >
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+</html>
